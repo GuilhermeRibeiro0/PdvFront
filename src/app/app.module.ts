@@ -27,6 +27,7 @@ import { ProdutoService } from './services/produto.service';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { CategoriaService } from './services/categoria.service';
 import { EnderecoComponent } from './endereco/endereco.component';
+import { EnderecoService } from './services/endereco.service';
 
 @NgModule({
   declarations: [
@@ -59,7 +60,7 @@ import { EnderecoComponent } from './endereco/endereco.component';
     HttpClientModule
 
   ],
-  providers: [ClienteService,ProdutoService,CategoriaService],
+  providers: [ClienteService,ProdutoService,CategoriaService,EnderecoService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
