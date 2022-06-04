@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;1,100&display=swap');
+
+
+
+body{
+  background: linear-gradient(90deg, rgb(158, 158, 158) 0%, #6d6b6d 100%);
+  font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.content-1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 15px 30px;
+
+
+}
+.title{
+  font-size: 25px;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.btn{
+border-radius: 25px;
+margin-top: 15px;
+font-size: 15px;
+}
+
+.box{
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%,5%);
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 15px;
+  width: 50%;
+  color: white;
+}
+
+/*fieldset{
+  border: 3px solid dodgerblue;
+}*/
+
+legend{
+  border: 2px solid dodgerblue;
+  padding: 5px;
+  z-index:1;
+  text-align: center;
+  background-color: dodgerblue;
+  border-radius: 15px;
+  color: white
+}
+
+.inputBox{
+  position: relative;
+}
+
+.inputUser{
+  background: none;
+  border:none;
+  border-bottom: 1px solid white;
+  outline: none;
+  font-size: 15px;
+  width: 100%;
+  letter-spacing: 2px;
+  color: white;
+}
+
+
+.lableInput{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.inputUser:focus ~ .lableInput,
+.inputUser:valid ~ .lableInput{
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;
+}
+
+.dataN{
+border: none;
+padding: 8px;
+border-radius: 15px;
+outline: none;
+margin: 5px;
+font-size: 15px;
+}
+
+.btn-submit{
+  display: flex;
+  background: linear-gradient(90deg, rgb(158, 158, 158) 0%, #6d6b6d 100%);
+  width: 45%;
+  border: none;
+  padding: 5px;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  margin: 0 250px;
+}

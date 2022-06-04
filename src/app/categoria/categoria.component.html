@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Cadastros</title>
+</head>
+
+<body>
+    <div class="content-1">
+        <div class="title">
+            <h2>Categoria</h2>
+        </div>
+        <div class="com">
+            <button type="button" class="btn btn-primary" data-dismiss="alert" (click)="adicionar()" >Adicionar</button> |
+            <button type="button" class="btn btn-warning" (click)="alterar()" >Alterar</button> |
+            <button type="button" class="btn btn-danger"  (click)="excluir()" >Apagar</button>
+          </div>
+
+    </div>
+    <div class="box">
+        <form action="">
+            <fieldset>
+                <div class="inputBox">
+                    <input type="text" name="id" id="id" class="inputUser" required autocomplete [(ngModel)]="obj.id">
+                    <label for="nome" class="lableInput">Codigo</label>
+                </div><br>
+                <div class="inputBox">
+                    <input type="text" name="nomeCat" id="nomeCat" class="inputUser" required autocomplete [(ngModel)]="obj.nome">
+                    <label for="cat" class="lableInput">Nome da Categoria</label>
+                </div>
+                  <div class="inputBox">
+                    <input type="text" name="nomeCat" id="nomeCat" class="inputUser" required autocomplete [(ngModel)]="objProd.id">
+                    <label for="cat" class="lableInput">Informe o ID do produto</label>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+</body>
+
+</html>

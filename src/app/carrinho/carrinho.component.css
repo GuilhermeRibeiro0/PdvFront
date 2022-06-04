@@ -1,0 +1,101 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color:rgb(97, 96, 96);
+}
+.prime{
+  height: 100%;
+  width: 160vh;
+  background-color: aliceblue;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.second{
+  height: 100%;
+  width: 40vh;
+  background-color: antiquewhite;
+  align-items: center;
+}
+
+
+.tabe{
+  display: block;
+  background-color: white;
+  color: black;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  border-collapse: collapse;
+  overflow: hidden;
+  gap: 20px;
+  padding: 15px 15px;
+  align-items: center;
+  font-size: 15px;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+
+}
+
+.tabe thead{
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+
+.tabe th, .tabe td{
+  padding: 15px;
+  border: 1px solid rgb(255, 3, 3);
+  max-width: 150px;
+  max-height: 100%;
+  letter-spacing: 2px;
+  table-layout: fixed;
+}
+
+.imgs{
+  height: 20px;
+  width: 20px;
+  align-items: center;
+}
+.tabes{
+  tab-size: 30px;
+  display: block;
+  color: black;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+  border-collapse: collapse;
+  overflow: hidden;
+  gap: 5px;
+  padding: 5px 5px;
+  align-items: center;
+  font-size: 9px;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.tabes thead{
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.tabes th, .tabes td{
+  padding: 5px;
+  border: 1px solid rgb(255, 3, 3);
+  letter-spacing: 2px;
+  table-layout: fixed;
+}

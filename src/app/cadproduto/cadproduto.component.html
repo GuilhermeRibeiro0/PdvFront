@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <title>Cadastros de produtos</title>
+</head>
+
+<body>
+  <div class="content-1">
+    <div class="title">
+      <h2></h2>
+    </div>
+    <div class="com">
+      <button type="button" class="btn btn-primary" data-dismiss="alert" (click)="adicionar()">Adicionar</button> |
+      <button type="button" class="btn btn-warning" (click)="alterar()">Alterar</button> |
+      <button type="button" class="btn btn-danger" (click)="excluir()">Apagar</button>
+    </div>
+  </div>
+
+
+  <div class="alert alert-dark alert-dismissible fade show" role="alert">
+    <strong>{{mens}}</strong>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+
+
+  <div class="box">
+    <form action="">
+      <fieldset>
+        <legend><b>Cadastro de Produtos</b></legend><br><br>
+
+        <div class="inputBox">
+          <input type="text" name="id" id="id" class="inputUser" required autocomplete [(ngModel)]="obj.id">
+          <label for="nome" class="lableInput">Codigo</label>
+        </div><br>
+        <div class="inputBox">
+          <input type="text" name="nome" id="nome" class="inputUser" required autocomplete [(ngModel)]="obj.nome">
+          <label for="nome" class="lableInput">Nome do Produto</label>
+        </div><br>
+        <div class="inputBox">
+          <input type="text" name="valor" id="valor" class="inputUser" required [(ngModel)]="obj.preco">
+          <label for="valor" class="lableInput">Valor do Produto</label>
+        </div><br>
+
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Nome do Produto</th>
+              <th scope="col">Preço</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let pro of lista">
+              
+              <td> {{ pro.id }} </td>
+              <td> {{ pro.nome }} </td>
+              <td> {{ pro.preco }} </td>
+              <td><button type="button" class="btn btn-secondary" (click)="carregarDados(pro)">Carregar Produtos</button></td>
+            </tr>
+            
+          </tbody>
+        </table>
+
+        <app-categoria></app-categoria>
+
+
+
+      </fieldset>
+    </form>
+  </div>
+
+</body>
+
+</html>
