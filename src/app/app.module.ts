@@ -26,6 +26,7 @@ import { ClienteService } from './services/cliente.service';
 import { ProdutoService } from './services/produto.service';
 import { CategoriaComponent } from './categoria/categoria.component';
 import { CategoriaService } from './services/categoria.service';
+import { EnderecoComponent } from './endereco/endereco.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { CategoriaService } from './services/categoria.service';
     CadastrosComponent,
     CadprodutoComponent,
     CategoriaComponent,
+    EnderecoComponent,
 
 
   ],
